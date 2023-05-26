@@ -41,7 +41,7 @@ const ContactForm = () => {
         setFormData({ name: "", email: "", message: "" });
         setTimeout(() => {
           setSubmitted(false);
-        }, 5000);
+        }, 10000);
       }
     } catch (error) {
       console.error("Error occurred while sending form data:", error);
