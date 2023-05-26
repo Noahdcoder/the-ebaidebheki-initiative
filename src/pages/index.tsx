@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function Home() {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-red-600 transition ease transform duration-1000`;
   const { isOpen, setIsOpen, menuRef } = useNavbarSize();
+
   const [ref1, inView1] = useInView({
     threshold: 0.1,
     triggerOnce: true,
