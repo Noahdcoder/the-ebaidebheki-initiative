@@ -4,8 +4,9 @@ import { useNavbarSize } from "../../hooks/useNavBarSize";
 import { useRouter } from "next/router";
 
 export default function NavBar() {
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-red-600 transition ease transform duration-1000`;
   const router = useRouter();
-  const { isOpen, setIsOpen, genericHamburgerLine, menuRef } = useNavbarSize();
+  const { isOpen, setIsOpen, menuRef } = useNavbarSize();
   return (
     <>
       <nav className="absolute w-full bg-bianca shadow-lg p-4 space-y-4 md:px-16">
