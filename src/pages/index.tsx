@@ -160,7 +160,7 @@ export default function Home() {
           exit="hidden"
           transition={{ duration: 2 }}
           ref={ref1}
-          className="key-objectives flex flex-col space-y-4 text-lg font-bold text-center justify-center items-center md:space-x-8 py-16 md:space-y-0 md:flex-row md:text-2xl md:justify-between md:px-16"
+          className="key-objectives flex flex-col space-y-4 text-lg font-bold text-center justify-center items-center px-8 md:space-x-8 py-16 md:space-y-0 md:flex-row md:text-2xl md:justify-between md:px-16"
         >
           <p className="text-white">Engaging the public</p>
           <p className="text-white">Creating Awareness</p>
