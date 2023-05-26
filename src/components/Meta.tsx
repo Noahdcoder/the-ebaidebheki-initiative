@@ -14,65 +14,50 @@ export default function Meta({ title }: metaProps) {
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
           name="title"
-          content="Leading Environmental and Engineering Services | AOC Engineering Limited"
+          content="Advocacy for Development | The Ebaidebheki Initiative (TEI)"
         />
         <meta
           name="description"
-          content="AOC Engineering Limited provides comprehensive environmental planning, waste management, engineering, energy services, and petroleum-related solutions. With expertise in environmental impact assessment, pollution control, GIS services, and more, we are committed to sustainability and net zero goals. Contact us for reliable and innovative environmental and engineering solutions."
+          content="Advocacy for Development | The Ebaidebheki Initiative (TEI) is a non-profit organization dedicated to raising awareness about the Sustainable Development Goals (SDGs) 2030 and the Africa Agenda 2063. We engage the public, educate, and advocate for the actualization of development initiatives. Join us in driving positive change and creating a sustainable future for all."
         />
         <meta
           name="keywords"
-          content="environmental planning, waste management, engineering services, energy services, petroleum services, environmental impact assessment, pollution control, GIS services, groundwater investigation, waste disposal, structural designing, petroleum products, industrial operations, sustainability, net zero, climate change"
+          content="advocacy, development, Sustainable Development Goals, SDGs, Africa Agenda 2063, awareness, education, public engagement"
         />
         <meta
           property="og:title"
-          content="AOC Engineering Limited | Leading Environmental and Engineering Services"
+          content="The Ebaidebheki Initiative (TEI) | Advocacy for Development"
         />
         <meta
           property="og:url"
-          content="https://aocengineeringlimited.com/who-we-are"
+          content="https://theebaidebhekiinitiative.org"
         />
         <meta
           property="og:description"
-          content="AOC Engineering Limited is a leading provider of comprehensive environmental planning, waste management, engineering services, and energy solutions. With a strong commitment to sustainability and addressing climate change, we offer expertise in environmental impact assessment, pollution control, GIS services, and more. Our team of professionals is dedicated to delivering innovative and reliable solutions tailored to meet our clients' needs. Contact AOC Engineering Limited today for top-notch environmental and engineering services that contribute to a net-zero future."
-        ></meta>
-        <meta property="og:locale" content="en_US"></meta>
+          content="The Ebaidebheki Initiative (TEI) is a non-profit organization dedicated to advocacy for development. We raise awareness about the Sustainable Development Goals (SDGs) 2030 and the Africa Agenda 2063. Our mission is to engage the public, educate, and advocate for the actualization of development initiatives. Join us in driving positive change and creating a sustainable future for all."
+        />
+        <meta property="og:locale" content="en_US" />
         <meta
           property="twitter:title"
-          content="AOC Engineering Limited | Leading Environmental and Engineering Services"
+          content="The Ebaidebheki Initiative (TEI) | Advocacy for Development"
         />
         <meta
           property="twitter:description"
-          content="AOC Engineering Limited provides comprehensive environmental planning, waste management, engineering services, and energy solutions. We are committed to sustainability and offer expertise in environmental impact assessment, pollution control, GIS services, and more. Contact us for reliable and innovative environmental and engineering solutions."
+          content="The Ebaidebheki Initiative (TEI) is a non-profit organization dedicated to advocacy for development. Join us in driving positive change and creating a sustainable future for all."
         />
-        <meta property="twitter:image" content="/images/aoc-logo-color.png" />
+        <meta property="twitter:image" content="/images/tei-logo.jpg" />
         <meta property="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="/images/tei-logo.jpg" />
         <meta
-          property="og:title"
-          content="AOC Engineering Limited | Leading Environmental and Engineering Services"
+          property="og:url"
+          content="https://theebaidebhekiinitiative.org"
         />
-        <meta
-          property="og:description"
-          content="AOC Engineering Limited provides comprehensive environmental planning, waste management, engineering services, and energy solutions. We are committed to sustainability and offer expertise in environmental impact assessment, pollution control, GIS services, and more. Contact us for reliable and innovative environmental and engineering solutions."
-        />
-        <meta property="og:image" content="/images/aoc-logo-color.png" />
-        <meta property="og:url" content="https://aocengineeringlimited.com" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="AOC Engineering Limited | Leading Environmental and Engineering Services"
-        />
-        <meta
-          property="og:description"
-          content="AOC Engineering Limited provides comprehensive environmental planning, waste management, engineering services, and energy solutions. We are committed to sustainability and offer expertise in environmental impact assessment, pollution control, GIS services, and more. Contact us for reliable and innovative environmental and engineering solutions."
-        />
-        <meta property="og:image" content="/images/aoc-logo-color.png" />
-        <meta property="og:image" content="/images/aoc-logo-color.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <link
           rel="canonical"
-          href="https://aocengineeringlimited.com/who-we-are"
+          href="https://theebaidebhekiinitiative.org/about-us"
         />
         <link
           rel="apple-touch-icon"
