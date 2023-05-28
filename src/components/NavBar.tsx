@@ -14,7 +14,7 @@ export default function NavBar() {
           <Link href="/" legacyBehavior>
             <a>
               <Image
-                src="/images/tei-logo.jpg"
+                src="/images/tei-logo-removebg.png"
                 alt="The Ebaidebheki Initiative Logo"
                 width={200}
                 height={100}
@@ -49,6 +49,16 @@ export default function NavBar() {
           </button>
           {/* Larger Screens' Links */}
           <ul className="hidden justify-around items-center space-x-16 text-emperor text-lg md:flex">
+            <li
+              className={`hover:text-supernova ${
+                router.pathname === "/" ? "text-flamingo" : ""
+              }`}
+            >
+              <Link href="/" legacyBehavior>
+                <a>Home</a>
+              </Link>
+            </li>
+            <p>.</p>
             <li
               className={`hover:text-supernova ${
                 router.pathname === "/about-us" ? "text-flamingo" : ""
@@ -87,6 +97,12 @@ export default function NavBar() {
             isOpen ? "max-h-screen" : "max-h-0"
           }`}
         >
+          <li>
+            <Link href="/" legacyBehavior>
+              <a>Home</a>
+            </Link>
+          </li>
+          <p>.</p>
           <li>
             <Link href="about-us" legacyBehavior>
               <a>About Us</a>

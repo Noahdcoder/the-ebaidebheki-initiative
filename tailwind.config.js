@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         flamingo: "#EA6630",
+        cinnabar: "#E2472E",
         bianca: "#FAF5EA",
         supernova: "#FAC50C",
         tonyspink: "#E49F7C",

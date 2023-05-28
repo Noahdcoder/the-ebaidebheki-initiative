@@ -27,7 +27,7 @@ export default function Donate() {
           </p>
           <p>Together, let&apos;s actualise developmental blueprints.</p>
         </div>
-        <div className="flex justify-center items-center py-8 bg-flamingo text-white rounded-r-lg">
+        <div className="flex justify-center items-center py-8 bg-flamingo text-white px-8 rounded-r-lg">
           <h3 className="text-2xl font-bold">
             You can make a bank transfer to the account details below.
           </h3>

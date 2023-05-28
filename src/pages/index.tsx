@@ -41,7 +41,7 @@ export default function Home() {
                 <Link href="/" legacyBehavior>
                   <a>
                     <Image
-                      src="/images/tei-logo.jpg"
+                      src="/images/tei-logo-removebg.png"
                       alt="The Ebaidebheki Initiative Logo"
                       width={200}
                       height={100}
@@ -81,6 +81,12 @@ export default function Home() {
                   isOpen ? "max-h-screen" : "max-h-0"
                 }`}
               >
+                <li className="pt-4">
+                  <Link href="/" legacyBehavior>
+                    <a>Home</a>
+                  </Link>
+                </li>
+                <p>.</p>
                 <li className="pt-4">
                   <Link href="about-us" legacyBehavior>
                     <a>About Us</a>
@@ -129,6 +135,10 @@ export default function Home() {
           </div>
           <div className="bg-supernova text-emperor">
             <nav className="hidden text-lg justify-center items-center space-x-8 py-8 md:py-16 md:flex">
+              <Link href="/" legacyBehavior>
+                <a className="hover:opacity-75">Home</a>
+              </Link>
+              <p>.</p>
               <Link href="/about-us" legacyBehavior>
                 <a className="hover:opacity-75">About Us</a>
               </Link>
@@ -142,15 +152,9 @@ export default function Home() {
               </Link>
             </nav>
             <div className="flex justify-center items-center mt-16 mr-16 md:mt-0 bg-white">
-              <Image
-                src="/images/nigeria-youth.png"
-                alt="Nigeria Youth"
-                width={250}
-                height={80}
-                layout="fixed"
-                quality={100}
-                className="rounded-md"
-              />
+              <h2 className="font-bold tracking-widest text-9xl text-transparent bg-gradient-text bg-clip-text animate-gradient">
+                TEI
+              </h2>
             </div>
           </div>
         </motion.header>
@@ -172,7 +176,7 @@ export default function Home() {
         </motion.section>
         <section className="flex flex-col space-y-4 p-8 md:flex-row md:space-y-0">
           <Image
-            src="/images/tei-logo.jpg"
+            src="/images/tei-logo-removebg.png"
             alt="The Ebaidebheki Initiative Logo"
             width={400}
             height={200}
@@ -216,6 +220,12 @@ export default function Home() {
             <hr className="h-1 bg-flamingo w-16" />
           </div>
           <div className="grid grid-cols-2 p-8 gap-8 md:grid-cols-4">
+            <Image
+              src="/images/nigeria-youth.png"
+              alt="Han Solicitors Logo"
+              width={400}
+              height={300}
+            />
             <Image
               src="/images/han-solicitors-partner.jpg"
               alt="Han Solicitors Logo"

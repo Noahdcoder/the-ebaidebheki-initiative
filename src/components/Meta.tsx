@@ -5,10 +5,11 @@ type metaProps = {
 };
 
 export default function Meta({ title }: metaProps) {
+  const fullTitle = `The Ebaidebheki Initiative (TEI) - ${title}`;
   return (
     <>
       <Head>
-        <title>The Ebaidebheki Initiative (TEI) - {title}</title>
+        <title>{fullTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
