@@ -6,7 +6,7 @@ const handler: NextApiHandler = async (req, res) => {
 
   const msg = {
     to: "ebbyquincy@gmail.com",
-    from: "noahnosaaghedo@gmail.com",
+    from: "maduekenonso5@gmail.com",
     subject: "Message from " + name + ". Their Email is " + email,
     html: `${message} <br> <b>Reply should be sent to ${email}</b>`,
   };
