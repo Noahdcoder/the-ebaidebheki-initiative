@@ -45,7 +45,7 @@ export default function Home() {
                       alt="The Ebaidebheki Initiative Logo"
                       width={200}
                       height={100}
-                      priority={true}
+                      priority={false}
                     />
                   </a>
                 </Link>
