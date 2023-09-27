@@ -33,7 +33,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="min-h-screen grid grid-cols-1 md:grid-cols-2"
+          className="min-h-screen grid grid-cols-1 lg:grid-cols-2"
         >
           <div className="flex flex-col justify-between p-8 space-y-16 bg-bianca md:space-y-0 md:p-16">
             <div className="">
@@ -49,7 +49,7 @@ export default function Home() {
                   </a>
                 </Link>
                 <button
-                  className="flex flex-col h-12 w-12 rounded justify-center items-center group md:hidden"
+                  className="flex flex-col h-12 w-12 rounded justify-center items-center group lg:hidden"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   <div
@@ -77,7 +77,7 @@ export default function Home() {
               </div>
               <ul
                 ref={menuRef}
-                className={`text-center space-y-2 text-emperor bg-white text-lg overflow-hidden transition-max-height duration-1000 md:hidden absolute top-24 left-0 w-full z-50 ${
+                className={`text-center space-y-2 text-emperor bg-white text-lg overflow-hidden transition-max-height duration-1000 lg:hidden absolute top-24 left-0 w-full z-50 ${
                   isOpen ? "max-h-screen" : "max-h-0"
                 }`}
               >
@@ -90,6 +90,12 @@ export default function Home() {
                 <li className="pt-4">
                   <Link href="about-us" legacyBehavior>
                     <a>About Us</a>
+                  </Link>
+                </li>
+                <p>.</p>
+                <li className="pt-4">
+                  <Link href="activities" legacyBehavior>
+                    <a>Activities</a>
                   </Link>
                 </li>
                 <p>.</p>
@@ -134,13 +140,17 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-supernova text-emperor">
-            <nav className="hidden text-lg justify-center items-center space-x-8 py-8 md:py-16 md:flex">
+            <nav className="hidden text-lg justify-center items-center space-x-4 py-8 md:py-16 lg:flex">
               <Link href="/" legacyBehavior>
                 <a className="hover:opacity-75">Home</a>
               </Link>
               <p>.</p>
               <Link href="/about-us" legacyBehavior>
                 <a className="hover:opacity-75">About Us</a>
+              </Link>
+              <p>.</p>
+              <Link href="/activities" legacyBehavior>
+                <a className="hover:opacity-75">Activities</a>
               </Link>
               <p>.</p>
               <Link href="/donate" legacyBehavior>
@@ -174,7 +184,7 @@ export default function Home() {
             Advocating for the realisation of development goals
           </p>
         </motion.section>
-        <section className="flex flex-col space-y-4 p-8 md:flex-row md:space-y-0">
+        <section className="flex flex-col space-y-4 p-8 lg:flex-row lg:space-y-0">
           <Image
             src="/images/tei-logo-removebg.png"
             alt="The Ebaidebheki Initiative Logo"
@@ -206,6 +216,95 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="bg-supernova flex flex-col space-y-4 p-8">
+          <div className="text-emperor space-y-4 md:px-8">
+            <h2 className="text-4xl font-semibold">Activities</h2>
+            <hr className="h-1 bg-flamingo w-16" />
+            <div className="space-y-2">
+              <p className="text-lg leading-8">
+                The TEI, as an advocacy platform, has evolved beyond its core
+                advocacy mission and has become an active force for change
+                through partnerships with other youth-led NGOs.
+              </p>
+              <div>
+                <Link href="/activities" legacyBehavior>
+                  <a className="underline text-flamingo text-xl font-semibold">
+                    ReadMore
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="flex justify-center">
+            <video controls>
+              <source src="/images/home-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p className="text-lg p-4 text-center font-semibold">
+            Moments from our WALK FOR SDGs
+          </p>
+          <hr />
+        </section>
+        <section className="flex justify-center p-4">
+          <div className="space-y-4">
+            <h2 className="text-4xl font-semibold">Gallery</h2>
+            <hr className="h-1 bg-flamingo w-16" />
+            <p className="text-lg">
+              Check out amazing images and videos from some of the activities we
+              have held in the past...
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <Image
+                  className="h-auto max-w-full rounded-lg"
+                  src="/images/home1.jpg"
+                  width={350}
+                  height={150}
+                  alt=""
+                />
+              </div>
+              <div>
+                <Image
+                  className="h-auto max-w-full rounded-lg"
+                  src="/images/home2.jpg"
+                  width={350}
+                  height={150}
+                  alt=""
+                />
+              </div>
+              <div>
+                <Image
+                  className="h-auto max-w-full rounded-lg"
+                  src="/images/home3.jpg"
+                  width={350}
+                  height={150}
+                  alt=""
+                />
+              </div>
+              <div>
+                <Image
+                  className="h-auto max-w-full rounded-lg"
+                  src="/images/home4.jpg"
+                  width={350}
+                  height={150}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <Link href="/gallery" legacyBehavior>
+                <a>
+                  <button className="bg-flamingo hover:bg-tonyspink text-white font-bold py-2 px-4 rounded">
+                    See More
+                  </button>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </section>
         <hr className="m-8" />
         <motion.section
           animate={inView2 ? "visible" : "hidden"}
@@ -220,12 +319,6 @@ export default function Home() {
             <hr className="h-1 bg-flamingo w-16" />
           </div>
           <div className="grid grid-cols-2 p-8 gap-8 md:grid-cols-4">
-            <Image
-              src="/images/nigeria-youth.png"
-              alt="Han Solicitors Logo"
-              width={400}
-              height={300}
-            />
             <Image
               src="/images/han-solicitors-partner.jpg"
               alt="Han Solicitors Logo"

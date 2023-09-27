@@ -24,7 +24,7 @@ export default function NavBar() {
           </Link>
           {/* Mobile Hamburger */}
           <button
-            className="flex flex-col h-12 w-12 rounded justify-center items-center group md:hidden"
+            className="flex flex-col h-12 w-12 rounded justify-center items-center group lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div
@@ -48,7 +48,7 @@ export default function NavBar() {
             />
           </button>
           {/* Larger Screens' Links */}
-          <ul className="hidden justify-around items-center space-x-16 text-emperor text-lg md:flex">
+          <ul className="hidden justify-around items-center space-x-8 text-emperor text-lg lg:flex">
             <li
               className={`hover:text-supernova ${
                 router.pathname === "/" ? "text-flamingo" : ""
@@ -66,6 +66,16 @@ export default function NavBar() {
             >
               <Link href="about-us" legacyBehavior>
                 <a>About Us</a>
+              </Link>
+            </li>
+            <p>.</p>
+            <li
+              className={`hover:text-supernova ${
+                router.pathname === "/activities" ? "text-flamingo" : ""
+              }`}
+            >
+              <Link href="activities" legacyBehavior>
+                <a>Activities</a>
               </Link>
             </li>
             <p>.</p>
@@ -93,7 +103,7 @@ export default function NavBar() {
         {/* Mobile Links */}
         <ul
           ref={menuRef}
-          className={`space-y-2 text-emperor text-lg overflow-hidden transition-max-height duration-1000 md:hidden ${
+          className={`space-y-2 text-emperor text-lg overflow-hidden transition-max-height duration-1000 lg:hidden ${
             isOpen ? "max-h-screen" : "max-h-0"
           }`}
         >
@@ -106,6 +116,12 @@ export default function NavBar() {
           <li>
             <Link href="about-us" legacyBehavior>
               <a>About Us</a>
+            </Link>
+          </li>
+          <p>.</p>
+          <li>
+            <Link href="activities" legacyBehavior>
+              <a>Activities</a>
             </Link>
           </li>
           <p>.</p>
