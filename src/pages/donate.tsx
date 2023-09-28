@@ -16,23 +16,25 @@ export default function Donate() {
         </h2>
         <div className="space-y-4 text-lg leading-8">
           <p>
-            We rely on the generous support of individuals like you to fund our
-            initiatives and bring about positive change.
+            We depend on the kind and generous support of individuals like you
+            to finance our initiatives and drive positive change. Your
+            contribution holds the power to create a substantial impact,
+            allowing us to sustain our crucial efforts.
           </p>
           <p>
-            Your contribution can make a significant impact, enabling us to
-            continue our vital work. We gladly accept donations from
-            individuals, corporations, and organisations who share our vision
-            for a better future.
+            We warmly welcome donations from individuals, corporations, and
+            organizations that align with our vision for a brighter future.
           </p>
-          <p>Together, let&apos;s actualise developmental blueprints.</p>
+          <p>
+            Together, let&apos;s turn our developmental blueprints into reality.
+          </p>
         </div>
         <div className="py-8 bg-flamingo text-white px-8 rounded-r-lg space-y-8">
           <h3 className="text-2xl font-bold">
             You can make a bank transfer to the account details below.
           </h3>
           <p className="text-xl font-semibold">
-            Account Name: The Ebhaidebheki Initiative
+            Account Name: The Ebaidebheki Initiative
           </p>
           <p className="text-xl font-semibold">Account Number: 1017631065</p>
           <p className="text-xl font-semibold">Bank: Zenith Bank</p>

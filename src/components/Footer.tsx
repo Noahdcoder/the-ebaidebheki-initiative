@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faLocation } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faLocation,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,13 +12,18 @@ export default function Footer() {
     <footer>
       <div className="grid grid-cols-1 gap-4 p-8 bg-bianca md:grid-cols-2">
         <div className="space-y-4">
-          <div className="flex items-center text-xl space-x-4 text-emperor ">
-            <FontAwesomeIcon icon={faLocation} />
-            <p>Plot 766 Abubakar Usman Cresent, Jabi Abuja</p>
-          </div>
+          <p className="text-xl">
+            For inquiries, sponsorships and partnerships
+          </p>
           <div className="flex items-center text-xl space-x-4 text-emperor ">
             <FontAwesomeIcon icon={faPhone} />
             <a href="tel:08069729754">08069729754</a>
+          </div>
+          <div className="flex items-center text-xl space-x-4 text-emperor ">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <a href="mailto:ebaidebhekiinitiative@gmail.com">
+              ebaidebhekiinitiative@gmail.com
+            </a>
           </div>
         </div>
         <div className="space-y-4">

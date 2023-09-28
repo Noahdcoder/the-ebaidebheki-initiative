@@ -115,8 +115,8 @@ export default function Home() {
             </div>
             <div className="space-y-4 text-emperor">
               <h1 className="capitalize text-3xl font-bold">
-                Birthed out of the yearning to see to the actualisation of
-                development blueprints.
+                Born from the yearning to see to the realization of development
+                blueprints.
               </h1>
               <p>
                 TEI has created this platform to create awareness, enlighten,
@@ -179,10 +179,10 @@ export default function Home() {
           ref={ref1}
           className="key-objectives flex flex-col space-y-4 text-lg font-bold text-center justify-center items-center px-8 md:space-x-8 py-16 md:space-y-0 md:flex-row md:text-2xl md:justify-between md:px-16"
         >
-          <p className="text-white">Engaging the public</p>
-          <p className="text-white">Creating Awareness</p>
+          <p className="text-white">Involving the public</p>
+          <p className="text-white">Raising Awareness</p>
           <p className="text-white">
-            Advocating for the realisation of development goals
+            Championing the Achievement of Development Goals
           </p>
         </motion.section>
         <section className="flex flex-col space-y-4 p-8 lg:flex-row lg:space-y-0">
@@ -197,15 +197,12 @@ export default function Home() {
             <hr className="h-1 bg-flamingo w-16" />
             <div className="space-y-2">
               <p className="text-lg leading-8">
-                TEI was birthed out of the yearning to see to the actualisation
-                of development blueprints.
-              </p>
-              <p className="text-lg leading-8">
-                “Advocacy for development”, which is TEI’s mantra entails
-                engagement of the public on developmental issues. Fully abreast
-                with the essence of advocacy in development, TEI has created
-                this platform to create awareness, enlighten, educate, and
-                advocate for the actualisation of development.
+                TEI&apos;s core mission, &apos;Advocacy for development,&apos;
+                is dedicated to engaging the public on critical developmental
+                issues. With a profound understanding of the role advocacy plays
+                in development, TEI has established this platform to foster
+                awareness, enlightenment, education, and climate change advocacy
+                in pursuit of sustainable development.
               </p>
               <div>
                 <Link href="/about-us" legacyBehavior>
@@ -367,7 +364,7 @@ export default function Home() {
         <section className="flex flex-col px-16 py-8 bg-flamingo space-y-4 md:space-y-0 md:flex-row">
           <div className="flex justify-center items-center text-lg font-bold text-white md:w-3/4 md:text-4xl">
             <p className="text-center">
-              Let&apos;s actualise our development blueprints
+              Let&apos;s realize our development blueprints
             </p>
           </div>
           <div className="flex justify-center items-center md:w-1/4">
