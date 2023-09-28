@@ -17,7 +17,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center text-lg space-x-4 text-emperor ">
             <FontAwesomeIcon icon={faPhone} />
-            <a href="tel:08069729754">08069729754</a>
+            <a href="tel:+23408069729754">+23408069729754</a>
           </div>
           <div className="flex items-center text-lg space-x-4 text-emperor ">
             <FontAwesomeIcon icon={faEnvelope} />
