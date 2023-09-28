@@ -25,6 +25,10 @@ export default function Footer() {
               ebaidebhekiinitiative@gmail.com
             </a>
           </div>
+          <div className="flex items-center text-lg space-x-4 text-emperor ">
+            <FontAwesomeIcon icon={faLocation} />
+            <p>Abuja, Nigeria</p>
+          </div>
         </div>
         <div className="space-y-4">
           <h3 className="text-2xl text-left font-bold md:text-center">

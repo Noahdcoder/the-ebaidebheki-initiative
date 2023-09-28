@@ -21,11 +21,11 @@ export default function Contact() {
           <div className="grid grid-cols-1 gap-4 text-xl font-bold text-white md:grid-cols-2 md:gap-8">
             <div className="flex flex-col text-center space-y-4">
               <FontAwesomeIcon icon={faPhone} />
-              <a href="tel:08069729754">08069729754</a>
+              <a href="tel:08069729754">+23408069729754</a>
             </div>
             <div className="flex flex-col text-center space-y-4">
               <FontAwesomeIcon icon={faLocationPin} />
-              <p>Plot 766 Abubakar Usman Cresent, Jabi Abuja</p>
+              <p>Abuja, Nigeria</p>
             </div>
           </div>
           <ContactForm />
