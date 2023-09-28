@@ -15,11 +15,11 @@ export default function Footer() {
           <p className="text-xl">
             For inquiries, sponsorships and partnerships
           </p>
-          <div className="flex items-center text-xl space-x-4 text-emperor ">
+          <div className="flex items-center text-lg space-x-4 text-emperor ">
             <FontAwesomeIcon icon={faPhone} />
             <a href="tel:08069729754">08069729754</a>
           </div>
-          <div className="flex items-center text-xl space-x-4 text-emperor ">
+          <div className="flex items-center text-lg space-x-4 text-emperor ">
             <FontAwesomeIcon icon={faEnvelope} />
             <a href="mailto:ebaidebhekiinitiative@gmail.com">
               ebaidebhekiinitiative@gmail.com
