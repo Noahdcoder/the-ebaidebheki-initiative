@@ -197,12 +197,10 @@ export default function Home() {
             <hr className="h-1 bg-flamingo w-16" />
             <div className="space-y-2">
               <p className="text-lg leading-8">
-                TEI&apos;s core mission, &apos;Advocacy for development,&apos;
-                is dedicated to engaging the public on critical developmental
-                issues. With a profound understanding of the role advocacy plays
-                in development, TEI has established this platform to foster
-                awareness, enlightenment, education, and climate change advocacy
-                in pursuit of sustainable development.
+                The Ebaideheki Initiative is a distinguished Non-Governmental
+                Agency at the forefront of advocacy for the United Nations
+                Sustainable Development Goals (SDGs), with a primary focus on
+                addressing the challenges posed by Climate Change.
               </p>
               <div>
                 <Link href="/about-us" legacyBehavior>
