@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Meta from "@/components/Meta";
 import Footer from "@/components/Footer";
+import ClimateTeenHub from "@/components/ClimateTeenHub";
 import { useInView } from "react-intersection-observer";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -232,6 +233,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <ClimateTeenHub />
         <section>
           <div className="flex justify-center">
             <video controls>

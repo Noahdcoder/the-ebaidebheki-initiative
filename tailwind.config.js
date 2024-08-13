@@ -18,6 +18,10 @@ module.exports = {
         tonyspink: "#E49F7C",
         emperor: "#4F44F4F",
         white: "#FFFFFF",
+        mantis: "#7CC453",
+        mallard: "#2E4B20",
+        frost: "#EEF8E6",
+        pixieGreen: "#B2D7B2",
       },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
