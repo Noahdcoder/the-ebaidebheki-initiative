@@ -44,7 +44,7 @@ export default function Home() {
                     <Image
                       src="/images/tei-logo-removebg.png"
                       alt="The Ebaidebheki Initiative Logo"
-                      className="h-14 w-20"
+                      className="h-14 w-24"
                       width={200}
                       height={100}
                       priority={true}
@@ -56,7 +56,7 @@ export default function Home() {
                     <Image
                       src="/images/climate-teen-hub-member.jpg"
                       alt="The Ebaidebheki Initiative Logo"
-                      className="h-14 w-20"
+                      className="h-14 w-14"
                       width={200}
                       height={100}
                       priority={true}
@@ -68,7 +68,7 @@ export default function Home() {
                     <Image
                       src="/images/sustainable-17-goals.webp"
                       alt="The Ebaidebheki Initiative Logo"
-                      className="h-14 w-20"
+                      className="h-14 w-14"
                       width={200}
                       height={100}
                       priority={true}
