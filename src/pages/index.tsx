@@ -44,6 +44,31 @@ export default function Home() {
                     <Image
                       src="/images/tei-logo-removebg.png"
                       alt="The Ebaidebheki Initiative Logo"
+                      className="h-14 w-20"
+                      width={200}
+                      height={100}
+                      priority={true}
+                    />
+                  </a>
+                </Link>
+                <Link href="/climate-teen-hub" legacyBehavior>
+                  <a>
+                    <Image
+                      src="/images/climate-teen-hub-member.jpg"
+                      alt="The Ebaidebheki Initiative Logo"
+                      className="h-14 w-20"
+                      width={200}
+                      height={100}
+                      priority={true}
+                    />
+                  </a>
+                </Link>
+                <Link href="/" legacyBehavior>
+                  <a>
+                    <Image
+                      src="/images/sustainable-17-goals.webp"
+                      alt="The Ebaidebheki Initiative Logo"
+                      className="h-14 w-20"
                       width={200}
                       height={100}
                       priority={true}
