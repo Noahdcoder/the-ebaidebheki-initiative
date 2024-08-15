@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-red-600 transition ease transform duration-1000`;
+  const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-cinnabar transition ease transform duration-1000`;
   const { isOpen, setIsOpen, menuRef } = useNavbarSize();
 
   const [ref1, inView1] = useInView({
@@ -83,21 +83,21 @@ export default function Home() {
                     className={`${genericHamburgerLine} ${
                       isOpen
                         ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
-                        : "opacity-50 group-hover:opacity-100"
+                        : "opacity-100 group-hover:opacity-100"
                     }`}
                   />
                   <div
                     className={`${genericHamburgerLine} ${
                       isOpen
                         ? "opacity-0"
-                        : "opacity-50 group-hover:opacity-100"
+                        : "opacity-100 group-hover:opacity-100"
                     }`}
                   />
                   <div
                     className={`${genericHamburgerLine} ${
                       isOpen
                         ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
-                        : "opacity-50 group-hover:opacity-100"
+                        : "opacity-100 group-hover:opacity-100"
                     }`}
                   />
                 </button>

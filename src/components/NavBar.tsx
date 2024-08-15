@@ -4,7 +4,7 @@ import { useNavbarSize } from "../../hooks/useNavBarSize";
 import { useRouter } from "next/router";
 
 export default function NavBar() {
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-red-600 transition ease transform duration-1000`;
+  const genericHamburgerLine = `h-1 w-8 my-1 rounded-full bg-red-600 transition ease transform duration-1000`;
   const router = useRouter();
   const { isOpen, setIsOpen, menuRef } = useNavbarSize();
   return (
@@ -16,6 +16,31 @@ export default function NavBar() {
               <Image
                 src="/images/tei-logo-removebg.png"
                 alt="The Ebaidebheki Initiative Logo"
+                className="h-14 w-28 lg:h-20 lg:w-36"
+                width={200}
+                height={100}
+                priority={true}
+              />
+            </a>
+          </Link>
+          <Link href="/climate-teen-hub" legacyBehavior>
+            <a>
+              <Image
+                src="/images/climate-teen-hub-member.jpg"
+                alt="Climate Tee Hub Logo"
+                className="h-14 w-16 lg:h-20 lg:w-36"
+                width={200}
+                height={100}
+                priority={true}
+              />
+            </a>
+          </Link>
+          <Link href="/" legacyBehavior>
+            <a>
+              <Image
+                src="/images/sustainable-development-goals.jpg"
+                alt="Image of the United Nations sustainable development goals"
+                className="h-14 w-16 lg:h-20 lg:w-36"
                 width={200}
                 height={100}
                 priority={true}
@@ -31,19 +56,19 @@ export default function NavBar() {
               className={`${genericHamburgerLine} ${
                 isOpen
                   ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
-                  : "opacity-50 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
               }`}
             />
             <div
               className={`${genericHamburgerLine} ${
-                isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"
+                isOpen ? "opacity-0" : "opacity-100 group-hover:opacity-100"
               }`}
             />
             <div
               className={`${genericHamburgerLine} ${
                 isOpen
                   ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
-                  : "opacity-50 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
               }`}
             />
           </button>
