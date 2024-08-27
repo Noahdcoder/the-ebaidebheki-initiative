@@ -22,7 +22,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center p-4">
+    <div className="flex justify-center items-center lg:p-8">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
