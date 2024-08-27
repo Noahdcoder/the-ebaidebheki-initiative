@@ -1,5 +1,6 @@
 import { useNavbarSize } from "../../hooks/useNavBarSize";
 import Image from "next/image";
+import Carousel from "@/components/Carousel";
 import Link from "next/link";
 import Meta from "@/components/Meta";
 import Footer from "@/components/Footer";
@@ -139,6 +140,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+            <Carousel />
             <div className="space-y-4 text-emperor">
               <h1 className="capitalize text-3xl font-bold">
                 Born from the yearning to see to the realization of development
@@ -158,7 +160,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex space-x-4 lg:space-x-8 text-lg">
+            <div className="flex space-x-4 py-4 lg:space-x-8 text-lg">
               <a href="">Facebook</a>
               <p>.</p>
               <a href="">Twitter</a>
