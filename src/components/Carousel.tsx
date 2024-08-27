@@ -46,7 +46,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -59,7 +58,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -72,7 +70,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -84,7 +81,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -96,7 +92,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -108,7 +103,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -120,7 +114,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -132,7 +125,6 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
-              priority={true}
             />
           </div>
         </SwiperSlide>
