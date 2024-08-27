@@ -22,7 +22,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center p-8">
+    <div className="flex justify-center items-center p-4">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -46,20 +46,11 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
+              priority={true}
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center">
-            <Image
-              src="/images/home2.jpg"
-              alt="The Ebaidebheki Initiative at a radio station"
-              width={400}
-              height={300}
-              className="h-96"
-            />
-          </div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <div className="flex justify-center items-center">
             <Image
@@ -68,20 +59,11 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
+              priority={true}
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center items-center">
-            <Image
-              src="/images/home1.jpg"
-              alt="Global Access Master Class Logo"
-              width={400}
-              height={300}
-              className="h-96"
-            />
-          </div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <div className="flex justify-center items-center">
             <Image
@@ -90,6 +72,7 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
+              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -101,6 +84,7 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
+              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -112,6 +96,7 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
+              priority={true}
             />
           </div>
         </SwiperSlide>
@@ -123,6 +108,31 @@ export default function Carousel() {
               width={400}
               height={300}
               className="h-96"
+              priority={true}
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex justify-center items-center">
+            <Image
+              src="/images/home2.jpg"
+              alt="The Ebaidebheki Initiative at a radio station"
+              width={400}
+              height={300}
+              className="h-96"
+              priority={true}
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex justify-center items-center">
+            <Image
+              src="/images/home1.jpg"
+              alt="Global Access Master Class Logo"
+              width={400}
+              height={300}
+              className="h-96"
+              priority={true}
             />
           </div>
         </SwiperSlide>
