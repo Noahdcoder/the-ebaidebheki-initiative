@@ -62,9 +62,9 @@ export default function HeroSection() {
         </Link>
 
         {/* Announcement Button → Google Form (placeholder) */}
-        <Link href="https://your-google-form-link.com" target="_blank">
-          <div className="border border-cinnabar text-cinnabar py-3 px-6 rounded-lg font-semibold hover:bg-cinnabar hover:text-white transition cursor-pointer">
-            Climate Teen Summit: 10th December → Learn More
+        <Link href="https://forms.gle/ZHEi2zn4mnc5PbUU7" target="_blank">
+          <div className="uppercase border border-cinnabar text-cinnabar py-3 px-6 rounded-lg font-bold text-xl hover:bg-cinnabar hover:text-white transition cursor-pointer">
+            Climate Teen Summit; click here to register!
           </div>
         </Link>
       </motion.div>

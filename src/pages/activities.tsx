@@ -1,6 +1,7 @@
 import Meta from "@/components/Meta";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import ActivitiesSection from "@/components/ActivitiesSection";
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
           mission and has become an active force for change through partnerships
           with other youth-led NGOs.
         </h2>
+        <ActivitiesSection />
         <h3 className="text-lg text-emperor font-medium md:text-xl">
           In the past, we have successfully undertaken the following
           initiatives:
