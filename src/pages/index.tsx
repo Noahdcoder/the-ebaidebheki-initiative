@@ -1,6 +1,7 @@
 import { useNavbarSize } from "../../hooks/useNavBarSize";
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
+import HeroSection from "@/components/HeroSection";
 import Link from "next/link";
 import Meta from "@/components/Meta";
 import Footer from "@/components/Footer";
@@ -35,7 +36,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="min-h-screen grid grid-cols-1 lg:grid-cols-2"
+          className="min-h-screen grid grid-cols-1"
         >
           <div className="flex flex-col justify-between p-8 space-y-16 bg-bianca md:space-y-0 md:p-16">
             <div className="">
@@ -140,6 +141,28 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+            <nav className="hidden text-xl font-bold justify-center items-center space-x-16 py-8 lg:py-16 lg:flex">
+              <Link href="/" legacyBehavior>
+                <a className="hover:opacity-75">Home</a>
+              </Link>
+              <p>.</p>
+              <Link href="/about-us" legacyBehavior>
+                <a className="hover:opacity-75">About Us</a>
+              </Link>
+              <p>.</p>
+              <Link href="/activities" legacyBehavior>
+                <a className="hover:opacity-75">Activities</a>
+              </Link>
+              <p>.</p>
+              <Link href="/donate" legacyBehavior>
+                <a className="hover:opacity-75">Donate</a>
+              </Link>
+              <p>.</p>
+              <Link href="/contact-us" legacyBehavior>
+                <a className="hover:opacity-75">Contact Us</a>
+              </Link>
+            </nav>
+            <HeroSection />
             <Carousel />
             <div className="space-y-4 text-emperor">
               <h1 className="capitalize text-3xl font-bold">
@@ -169,27 +192,6 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-supernova text-emperor">
-            <nav className="hidden text-lg justify-center items-center space-x-4 py-8 md:py-16 lg:flex">
-              <Link href="/" legacyBehavior>
-                <a className="hover:opacity-75">Home</a>
-              </Link>
-              <p>.</p>
-              <Link href="/about-us" legacyBehavior>
-                <a className="hover:opacity-75">About Us</a>
-              </Link>
-              <p>.</p>
-              <Link href="/activities" legacyBehavior>
-                <a className="hover:opacity-75">Activities</a>
-              </Link>
-              <p>.</p>
-              <Link href="/donate" legacyBehavior>
-                <a className="hover:opacity-75">Donate</a>
-              </Link>
-              <p>.</p>
-              <Link href="/contact-us" legacyBehavior>
-                <a className="hover:opacity-75">Contact Us</a>
-              </Link>
-            </nav>
             <div className="flex justify-center items-center mt-16 mr-16 md:mt-0 bg-white">
               <h2 className="font-bold tracking-widest text-9xl text-transparent bg-gradient-text bg-clip-text animate-gradient">
                 TEI
