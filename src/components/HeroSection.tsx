@@ -81,7 +81,7 @@ export default function HeroSection() {
         className="text-2xl md:text-3xl font-bold text-center text-cinnabar mt-16"
         variants={fadeUp}
       >
-        Highlights from Climate Teen Summit 2026
+        Highlights from CLIMATE TEEN SUMMIT 2026
       </motion.h2>
 
       <motion.div
