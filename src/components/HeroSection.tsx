@@ -2,21 +2,34 @@ import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
-  // Staggered parent container
+  // Animation variants
   const containerVariants = {
     hidden: {},
     visible: { transition: { staggerChildren: 0.3 } },
   };
 
-  // Fade-up animation
   const fadeUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
+
+  /* =============================
+     👉 PUT YOUR EVENT MEDIA HERE
+     ============================= */
+
+  const eventMedia = [
+    { type: "image", src: "/images/event-1.jpg" }, // Image 1
+    { type: "image", src: "/images/event-2.jpg" }, // Image 2
+    { type: "image", src: "/images/event-3.jpg" }, // Image 3
+    { type: "image", src: "/images/event-4.jpg" }, // Image 4
+    { type: "image", src: "/images/event-5.jpg" }, // Image 5
+    { type: "video", src: "/images/event-highlight.mp4" }, // Highlight Video
+  ];
 
   return (
     <motion.div
@@ -47,46 +60,58 @@ export default function HeroSection() {
         className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8"
         variants={fadeUp}
       >
-        {/* Button 1 → Activities */}
         <Link href="/activities">
           <button className="bg-cinnabar text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-600 transition">
             Explore TEI’s Work
           </button>
         </Link>
 
-        {/* Button 2 → Contact Us */}
         <Link href="/contact-us">
           <button className="bg-cinnabar text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-600 transition">
             Join the TEI Community
           </button>
         </Link>
-
-        {/* Announcement Button → Google Form (placeholder) */}
-        <Link href="https://forms.gle/ZHEi2zn4mnc5PbUU7" target="_blank">
-          <div className="uppercase border border-cinnabar text-cinnabar py-3 px-6 rounded-lg font-bold text-xl hover:bg-cinnabar hover:text-white transition cursor-pointer">
-            Climate Teen Summit; click here to register!
-          </div>
-        </Link>
       </motion.div>
 
-      {/* IMAGES */}
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 mt-10"
+      {/* =============================
+          EVENT HIGHLIGHTS SECTION
+         ============================= */}
+
+      <motion.h2
+        className="text-2xl md:text-3xl font-bold text-center text-cinnabar mt-16"
         variants={fadeUp}
       >
-        <div className="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
-          <img
-            src="/images/climate-teen-hub-one.jpg"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
+        Highlights from Climate Teen Summit 2026
+      </motion.h2>
 
-        <div className="overflow-hidden rounded-xl shadow hover:shadow-lg transition">
-          <img
-            src="/images/climate-teen-hub-two.jpg"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10"
+        variants={fadeUp}
+      >
+        {eventMedia.map((item, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-xl shadow hover:shadow-lg transition"
+          >
+            {item.type === "image" && (
+              <Image
+                src={item.src}
+                alt="TEI Event"
+                width={800}
+                height={500}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            )}
+
+            {item.type === "video" && (
+              <video
+                src={item.src}
+                controls
+                className="w-full h-full object-cover"
+              />
+            )}
+          </div>
+        ))}
       </motion.div>
 
       {/* FOOTPRINT */}
@@ -96,7 +121,6 @@ export default function HeroSection() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-          {/* COUNTER 1 */}
           <motion.div className="hover:scale-105 transition-transform duration-300">
             <h3 className="text-4xl font-bold text-cinnabar">
               {inView ? (
@@ -109,7 +133,6 @@ export default function HeroSection() {
             <p className="text-lg font-medium">Advocacy reach across Africa</p>
           </motion.div>
 
-          {/* COUNTER 2 */}
           <motion.div className="hover:scale-105 transition-transform duration-300">
             <h3 className="text-4xl font-bold text-cinnabar">
               {inView ? <CountUp end={5000} duration={2} separator="," /> : "0"}
@@ -118,7 +141,6 @@ export default function HeroSection() {
             <p className="text-lg font-medium">Teens engaged across Africa</p>
           </motion.div>
 
-          {/* COUNTER 3 */}
           <motion.div className="hover:scale-105 transition-transform duration-300">
             <h3 className="text-4xl font-bold text-cinnabar">
               {inView ? <CountUp end={3} duration={2} /> : "0"}+
@@ -126,7 +148,6 @@ export default function HeroSection() {
             <p className="text-lg font-medium">Community climate actions</p>
           </motion.div>
 
-          {/* COUNTER 4 */}
           <motion.div className="hover:scale-105 transition-transform duration-300">
             <h3 className="text-4xl font-bold text-cinnabar">
               {inView ? <CountUp end={4} duration={2} /> : "0"}
@@ -134,7 +155,6 @@ export default function HeroSection() {
             <p className="text-lg font-medium">Years at COP</p>
           </motion.div>
 
-          {/* COUNTER 5 */}
           <motion.div className="hover:scale-105 transition-transform duration-300">
             <h3 className="text-4xl font-bold text-cinnabar">Multiple</h3>
             <p className="text-lg font-medium">Global & local partnerships</p>
