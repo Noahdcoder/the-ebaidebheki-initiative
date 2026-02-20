@@ -15,14 +15,6 @@ export default function Report() {
           Download PDF
         </a>
       </div>
-
-      {/* Embedded Viewer */}
-      <div className="mt-10 w-full h-[80vh]">
-        <iframe
-          src="/documents/teen-summit.pdf"
-          className="w-full h-full rounded-lg shadow"
-        ></iframe>
-      </div>
     </div>
   );
 }
