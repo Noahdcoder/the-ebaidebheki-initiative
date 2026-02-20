@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import Report from "./Report";
 
 export default function HeroSection() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -112,7 +113,17 @@ export default function HeroSection() {
             )}
           </div>
         ))}
+        <Link href="/media-gallery" className="group relative inline-block">
+          <span className="text-cinnabar font-bold text-lg md:text-xl">
+            See More Highlights
+          </span>
+
+          {/* Animated Underline */}
+          <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-cinnabar transition-all duration-300 group-hover:w-full"></span>
+        </Link>
       </motion.div>
+
+      <Report />
 
       {/* FOOTPRINT */}
       <motion.div className="mt-16 text-center" ref={ref} variants={fadeUp}>
