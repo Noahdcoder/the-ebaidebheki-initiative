@@ -113,7 +113,10 @@ export default function HeroSection() {
             )}
           </div>
         ))}
-        <Link href="/media-gallery" className="group relative inline-block">
+        <Link
+          href="/media-gallery"
+          className="hidden group relative inline-block"
+        >
           <span className="text-cinnabar font-bold text-lg md:text-xl">
             See More Highlights
           </span>
