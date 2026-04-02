@@ -123,6 +123,17 @@ export default function NavBar() {
                 <a>Contact Us</a>
               </Link>
             </li>
+            <p>.</p>
+            <li className="hover:text-supernova">
+              <a
+                href="https://forms.gle/bJycP7J6GZn3BSin9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-supernova"
+              >
+                Volunteer With Us
+              </a>
+            </li>
           </ul>
         </div>
         {/* Mobile Links */}
@@ -160,6 +171,17 @@ export default function NavBar() {
             <Link href="contact-us" legacyBehavior>
               <a>Contact Us</a>
             </Link>
+          </li>
+          <p>.</p>
+          <li className="hover:text-supernova">
+            <a
+              href="https://forms.gle/bJycP7J6GZn3BSin9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-supernova"
+            >
+              Volunteer With Us
+            </a>
           </li>
         </ul>
       </nav>

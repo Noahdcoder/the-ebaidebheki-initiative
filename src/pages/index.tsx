@@ -134,10 +134,21 @@ export default function Home() {
                   </Link>
                 </li>
                 <p>.</p>
-                <li className="pb-4">
+                <li>
                   <Link href="contact-us" legacyBehavior>
                     <a>Contact Us</a>
                   </Link>
+                </li>
+                <p>.</p>
+                <li className="hover:text-supernova pb-4">
+                  <a
+                    href="https://forms.gle/bJycP7J6GZn3BSin9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-supernova"
+                  >
+                    Volunteer With Us
+                  </a>
                 </li>
               </ul>
             </div>
@@ -161,7 +172,48 @@ export default function Home() {
               <Link href="/contact-us" legacyBehavior>
                 <a className="hover:opacity-75">Contact Us</a>
               </Link>
+              <p>.</p>
+              <a
+                href="https://forms.gle/bJycP7J6GZn3BSin9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-75"
+              >
+                Volunteer With Us
+              </a>
             </nav>
+            {/* <nav className="hidden text-xl font-bold justify-center items-center space-x-16 py-8 lg:py-16 lg:flex">
+              <Link href="/" legacyBehavior>
+                <a className="hover:opacity-75">Home</a>
+              </Link>
+              <p>.</p>
+              <Link href="/about-us" legacyBehavior>
+                <a className="hover:opacity-75">About Us</a>
+              </Link>
+              <p>.</p>
+              <Link href="/activities" legacyBehavior>
+                <a className="hover:opacity-75">Activities</a>
+              </Link>
+              <p>.</p>
+              <Link href="/donate" legacyBehavior>
+                <a className="hover:opacity-75">Donate</a>
+              </Link>
+              <p>.</p>
+              <Link href="/contact-us" legacyBehavior>
+                <a className="hover:opacity-75">Contact Us</a>
+              </Link>
+              <p>.</p>
+              <li>
+                <a
+                  href="https://forms.gle/bJycP7J6GZn3BSin9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-75"
+                >
+                  Volunteer With Us
+                </a>
+              </li>
+            </nav> */}
             <HeroSection />
             <Carousel />
             <div className="space-y-4 text-emperor">
