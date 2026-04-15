@@ -1,3 +1,4 @@
+import SheLeadsSection from "@/components/SheLeadsSection";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
@@ -107,6 +108,7 @@ export default function HeroSection() {
           Join our WhatsApp Community →
         </a>
       </motion.div>
+      <SheLeadsSection />
 
       {/* =============================
           EVENT HIGHLIGHTS
@@ -158,7 +160,6 @@ export default function HeroSection() {
           <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-cinnabar transition-all duration-300 group-hover:w-full"></span>
         </Link>
       </motion.div>
-
       <Report />
 
       {/* =============================
