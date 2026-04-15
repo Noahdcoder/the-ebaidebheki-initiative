@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SheLeadsSection() {
   return (
-    <section className="mt-16 px-4 md:px-10 lg:px-32">
+    <section className="mt-16">
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-10">
         {/* TITLE */}
         <h2 className="text-2xl md:text-3xl font-bold text-cinnabar text-center">
