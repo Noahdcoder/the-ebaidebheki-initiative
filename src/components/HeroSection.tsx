@@ -93,6 +93,12 @@ export default function HeroSection() {
             Volunteer With Us
           </button>
         </a>
+        <Link
+          href="/donate"
+          className="bg-yellow-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition inline-block"
+        >
+          Donate to Support Our Work
+        </Link>
       </motion.div>
 
       {/* WHATSAPP COMMUNITY */}
