@@ -67,7 +67,8 @@ export default function SheLeadsSection() {
               <p className="text-gray-700 leading-7">
                 Fellows completed environmental restoration practicals through a
                 nationwide Tree Planting Exercise across Nigeria&apos;s six
-                geopolitical zones, planting more than <strong>60 trees</strong>
+                geopolitical zones, planting more than{" "}
+                <strong>60 trees </strong>
                 in schools and orphanage homes. The Abuja practical at Abuja
                 Children&apos;s Home on 27 June 2026 featured the planting of
                 Mango, Pawpaw, Lemon, Moringa and other fruit trees while
