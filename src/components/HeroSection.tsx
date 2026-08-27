@@ -1,4 +1,5 @@
 import SheLeadsSection from "@/components/SheLeadsSection";
+import ClimateTeenInnovation from "@/components/ClimateTeenInnovation2026";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
@@ -114,6 +115,7 @@ export default function HeroSection() {
           Join our WhatsApp Community →
         </a>
       </motion.div>
+      <ClimateTeenInnovation />
       <SheLeadsSection />
 
       {/* =============================
