@@ -114,12 +114,12 @@ export default function Activities() {
                     {activity.description}
                   </p>
 
-                  <Link
+                  {/* <Link
                     href={activity.link}
                     className="mt-5 inline-block font-semibold text-mantis transition hover:text-flamingo"
                   >
                     Learn More →
-                  </Link>
+                  </Link> */}
                 </div>
               </article>
             ))}
