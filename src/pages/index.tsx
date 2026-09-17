@@ -430,7 +430,7 @@ export default function Home() {
             />
             <Image
               src="/images/partner-6.jpg"
-              alt="Conference of Speakers and Presidents of African Legislatures Logo"
+              alt="Conference of Speakers & Presidents of African Legislatures Logo"
               width={400}
               height={300}
             />
