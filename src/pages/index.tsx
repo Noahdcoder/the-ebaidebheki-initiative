@@ -399,6 +399,66 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 p-8 gap-8 md:grid-cols-4">
             <Image
+              src="/images/partner-1.jpg"
+              alt="The Careers Network Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-2.jpg"
+              alt="Eco-Friendly Sensitisation & Advocacy Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-3.jpg"
+              alt="Female Journalists Network Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-4.jpg"
+              alt="Growth for Sustainable Agriculture Initiative Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-5.jpg"
+              alt="The Upcycle Architect Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-6.jpg"
+              alt="Conference of Speakers and Presidents of African Legislatures Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-7.jpg"
+              alt="Uptex Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-8.jpg"
+              alt="Vivacity Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-9.jpg"
+              alt="Sustainable Actions for Nature Logo"
+              width={400}
+              height={300}
+            />
+            <Image
+              src="/images/partner-10.jpg"
+              alt="Clean Technology Hub Logo"
+              width={400}
+              height={300}
+            />
+            <Image
               src="/images/han-solicitors-partner.jpg"
               alt="Han Solicitors Logo"
               width={400}
